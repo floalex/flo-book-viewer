@@ -6,6 +6,11 @@ require "tilt/erubis"
 
 before do 
   @users = YAML.load_file("users.yaml")
+  # => {:jamy=>{:email=>"jamy.rustenburg@gmail.com", :interests=>["woodworking", 
+  #    "cooking", "reading"]}, :nora=>{:email=>"nora.alnes@yahoo.com", 
+  #    :interests=>["cycling", "basketball", "economics"]}, 
+  #    :hiroko=>{:email=>"hiroko.ohara@hotmail.com", :interests=>["politics", 
+  #    "history", "birding"]}}
 end
 
 helpers do
